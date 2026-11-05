@@ -1,60 +1,139 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2775.1">
-  <style type="text/css">
-    body {background-color: #0c0c0e}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 16.0px '.SF NS'; color: #aaa59b; -webkit-text-stroke: #aaa59b}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px '.SF NS'; color: #aaa59b; -webkit-text-stroke: #aaa59b}
-    p.p7 {margin: 0.0px 0.0px 12.0px 0.0px; font: 13.0px '.SF NS'; color: #5c5750; -webkit-text-stroke: #5c5750}
-    li.li5 {margin: 0.0px 0.0px 4.0px 0.0px; font: 16.0px '.SF NS'; color: #aaa59b; -webkit-text-stroke: #aaa59b}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 16.0px '.SF NS'; font-kerning: none; color: #419961; -webkit-text-stroke: 0px #419961}
-    span.s3 {font-kerning: none; background-color: rgba(255, 255, 255, 0.039)}
-    span.s4 {-webkit-text-stroke: 0px #000000}
-    ul.ul1 {list-style-type: disc}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Datenschutzerklärung – FinanzKlar</title>
+  <style>
+    :root {
+      --bg: #0c0c0e;
+      --card: #151518;
+      --border: #26262b;
+      --text: #b4afa5;
+      --heading: #ece9df;
+      --accent: #4fa774;
+      --accent-soft: rgba(79, 167, 116, 0.10);
+      --muted: #75706a;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f4f0;
+        --card: #ffffff;
+        --border: #e4e2dc;
+        --text: #4a4741;
+        --heading: #1c1b19;
+        --accent: #2f8a57;
+        --accent-soft: rgba(47, 138, 87, 0.08);
+        --muted: #8a867e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 400 16px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+    .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; color: var(--heading); font-weight: 600; font-size: 17px; letter-spacing: -0.01em; }
+    .brand-mark { width: 28px; height: 28px; border-radius: 8px; background: var(--accent); display: grid; place-items: center; color: #fff; font-size: 15px; font-weight: 700; }
+    h1 { margin: 0 0 6px; color: var(--heading); font-size: clamp(30px, 6vw, 40px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; overflow-wrap: anywhere; }
+    .meta { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+    .highlight { margin: 0 0 24px; padding: 16px 20px; border-radius: 14px; background: var(--accent-soft); border: 1px solid var(--accent); color: var(--heading); }
+    .highlight strong { color: var(--accent); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 8px 24px; }
+    section { padding: 24px 0; border-bottom: 1px solid var(--border); }
+    section:last-child { border-bottom: 0; }
+    h2 { display: flex; gap: 10px; align-items: baseline; margin: 0 0 10px; color: var(--heading); font-size: 18px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.35; }
+    h2 .num { flex: none; color: var(--accent); font-variant-numeric: tabular-nums; }
+    h3 { margin: 18px 0 8px; color: var(--heading); font-size: 15px; font-weight: 600; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    li::marker { color: var(--accent); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .note { padding: 14px 16px; border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; background: var(--accent-soft); }
+    footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+    @media (max-width: 480px) { .card { padding: 4px 18px; } }
   </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 36.0px 0.0px; font: 36.0px 'Helvetica Neue'; color: #dad7c9; -webkit-text-stroke: #dad7c9"><span class="s1"><b>Datenschutzerklärung</b></span></h1>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">1) ERHEBUNG PERSONENBEZOGENER DATEN UND KONTAKTDATEN DES VERANTWORTLICHEN</span></h2>
-<p class="p3"><span class="s1">Wir freuen uns, dass Sie unsere Applikation (nachfolgend „App“) verwenden. Im Folgenden informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer App. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert werden können.</span></p>
-<p class="p3"><span class="s1">Verantwortlicher für die Datenverarbeitung im Sinne der DSGVO ist:<br>
-Norman Freudenhagen, Roncallistr. 33, 53840 Troisdorf, Deutschland<br>
-<br>
-E-Mail: <a href="mailto:finanzklar.support@gmail.com"><span class="s2">finanzklar.support@gmail.com</span></a></span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">2) DOWNLOAD ÜBER DEN APP STORE</span></h2>
-<p class="p3"><span class="s1">Wenn Sie unsere App über den Apple App Store herunterladen, werden die dafür erforderlichen Informationen an Apple übertragen (u.a. Apple-ID, E-Mail-Adresse, Zeitpunkt des Downloads, Zahlungsinformationen und Gerätekennung). Diese Datenverarbeitung erfolgt ausschließlich durch Apple; wir haben darauf keinen Einfluss und erhalten diese Daten nicht. Näheres finden Sie in der <a href="https://www.apple.com/de/legal/privacy/"><span class="s2">Datenschutzrichtlinie von Apple</span></a>.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">3) LOKALE SPEICHERUNG IHRER DATEN</span></h2>
-<p class="p4"><span class="s3">FinanzKlar funktioniert vollständig offline. Alle Daten, die Sie in der App eingeben – etwa Budget, Einnahmen, Ausgaben, Fixkosten, Rücklagen und Kategorien – werden ausschließlich lokal auf Ihrem Gerät gespeichert. Die App stellt keine Verbindung zu eigenen Servern oder Servern Dritter her. Wir erhalten Ihre Daten zu keinem Zeitpunkt.</span></p>
-<p class="p3"><span class="s1">Die App enthält keine Werbung, keine Analyse- oder Tracking-Werkzeuge und kein Benutzerkonto. Wenn Sie die App löschen, werden auch alle darin gespeicherten Daten von Ihrem Gerät entfernt.</span></p>
-<p class="p3"><span class="s1">Sofern Sie in Ihren Geräteeinstellungen die iCloud- oder Geräte-Datensicherung von Apple aktiviert haben, können die App-Daten Bestandteil dieser Sicherung sein. Diese Sicherung erfolgt durch Apple und unterliegt den Datenschutzbestimmungen von Apple.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">4) FACE ID / TOUCH ID</span></h2>
-<p class="p3"><span class="s1">Sie können die App optional mit Face ID oder Touch ID absichern. Die Prüfung erfolgt ausschließlich durch das Betriebssystem Ihres Geräts. Die App erhält keinen Zugriff auf Ihre biometrischen Daten, sondern lediglich die Information, ob die Entsperrung erfolgreich war.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">5) SPENDEN (IN-APP-KÄUFE)</span></h2>
-<p class="p3"><span class="s1">Die App bietet die Möglichkeit, die Entwicklung freiwillig mit einer Spende zu unterstützen. Die Abwicklung erfolgt ausschließlich über das In-App-Kauf-System von Apple. Zahlungsdaten werden allein von Apple verarbeitet; wir erhalten keine personenbezogenen Daten über Sie, sondern lediglich anonymisierte Umsatzinformationen von Apple.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">6) KONTAKTAUFNAHME</span></h2>
-<p class="p3"><span class="s1">Im Rahmen der Kontaktaufnahme mit uns (z.B. per E-Mail) werden personenbezogene Daten erhoben. Diese Daten werden ausschließlich zum Zweck der Beantwortung Ihres Anliegens gespeichert und verwendet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Ihre Daten werden nach abschließender Bearbeitung Ihrer Anfrage gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">7) RECHTE DES BETROFFENEN</span></h2>
-<p class="p3"><span class="s1">Das geltende Datenschutzrecht gewährt Ihnen folgende Betroffenenrechte gegenüber dem Verantwortlichen:</span></p>
-<ul class="ul1">
-  <li class="li5"><span class="s4"></span><span class="s1">Auskunftsrecht gemäß Art. 15 DSGVO</span></li>
-  <li class="li5"><span class="s4"></span><span class="s1">Recht auf Berichtigung gemäß Art. 16 DSGVO</span></li>
-  <li class="li5"><span class="s4"></span><span class="s1">Recht auf Löschung gemäß Art. 17 DSGVO</span></li>
-  <li class="li5"><span class="s4"></span><span class="s1">Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO</span></li>
-  <li class="li5"><span class="s4"></span><span class="s1">Recht auf Unterrichtung gemäß Art. 19 DSGVO</span></li>
-  <li class="li5"><span class="s4"></span><span class="s1">Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO</span></li>
-  <li class="li5"><span class="s4"></span><span class="s1">Recht auf Widerruf erteilter Einwilligungen gemäß Art. 7 Abs. 3 DSGVO</span></li>
-  <li class="li5"><span class="s4"></span><span class="s1">Recht auf Beschwerde bei einer Aufsichtsbehörde gemäß Art. 77 DSGVO</span></li>
-</ul>
-<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 15.0px '.SF NS'; color: #dad7c9; -webkit-text-stroke: #dad7c9"><span class="s1">Widerspruchsrecht</span></h3>
-<p class="p4"><span class="s3">Wenn wir im Rahmen einer Interessenabwägung Ihre personenbezogenen Daten aufgrund unseres überwiegenden berechtigten Interesses verarbeiten, haben Sie das jederzeitige Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen diese Verarbeitung Widerspruch mit Wirkung für die Zukunft einzulegen. Machen Sie von Ihrem Widerspruchsrecht Gebrauch, beenden wir die Verarbeitung der betroffenen Daten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Grundrechte und Grundfreiheiten überwiegen.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 12.0px '.SF NS'; color: #419961; -webkit-text-stroke: #419961"><span class="s1">8) DAUER DER SPEICHERUNG PERSONENBEZOGENER DATEN</span></h2>
-<p class="p3"><span class="s1">Die Dauer der Speicherung von personenbezogenen Daten bemisst sich anhand der jeweiligen Rechtsgrundlage, am Verarbeitungszweck und – sofern einschlägig – anhand der jeweiligen gesetzlichen Aufbewahrungsfrist. Personenbezogene Daten werden gelöscht, sobald sie für die Zwecke, für die sie erhoben wurden, nicht mehr notwendig sind.</span></p>
-<p class="p7"><span class="s1">Stand: 03.11.2026 · © 2026 FinanzKlar</span></p>
+<div class="wrap">
+  <div class="brand"><span class="brand-mark">F</span>FinanzKlar</div>
+
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">Stand: 05.11.2026</p>
+
+  <div class="highlight">
+    <strong>Kurz gesagt:</strong> FinanzKlar funktioniert vollständig offline. Ihre Finanzdaten bleiben auf Ihrem Gerät – ohne Server, ohne Tracking, ohne Werbung.
+  </div>
+
+  <div class="card">
+    <section>
+      <h2><span class="num">1</span>Erhebung personenbezogener Daten und Kontaktdaten des Verantwortlichen</h2>
+      <p>Wir freuen uns, dass Sie unsere Applikation (nachfolgend „App“) verwenden. Im Folgenden informieren wir Sie über den Umgang mit Ihren personenbezogenen Daten bei der Nutzung unserer App. Personenbezogene Daten sind hierbei alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+      <p>
+        Verantwortlicher für die Datenverarbeitung im Sinne der DSGVO ist:<br>
+        Norman Freudenhagen, Roncallistr. 33, 53840 Troisdorf, Deutschland<br>
+        E-Mail: <a href="mailto:finanzklar.support@gmail.com">finanzklar.support@gmail.com</a>
+      </p>
+    </section>
+
+    <section>
+      <h2><span class="num">2</span>Download über den App Store</h2>
+      <p>Wenn Sie unsere App über den Apple App Store herunterladen, werden die dafür erforderlichen Informationen an Apple übertragen (u.a. Apple-ID, E-Mail-Adresse, Zeitpunkt des Downloads, Zahlungsinformationen und Gerätekennung). Diese Datenverarbeitung erfolgt ausschließlich durch Apple; wir haben darauf keinen Einfluss und erhalten diese Daten nicht. Näheres finden Sie in der <a href="https://www.apple.com/de/legal/privacy/" target="_blank" rel="noopener">Datenschutzrichtlinie von Apple</a>.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">3</span>Lokale Speicherung Ihrer Daten</h2>
+      <p>FinanzKlar funktioniert vollständig offline. Alle Daten, die Sie in der App eingeben – etwa Budget, Einnahmen, Ausgaben, Fixkosten, Rücklagen und Kategorien – werden ausschließlich lokal auf Ihrem Gerät gespeichert. Die App stellt keine Verbindung zu eigenen Servern oder Servern Dritter her. Wir erhalten Ihre Daten zu keinem Zeitpunkt.</p>
+      <p>Die App enthält keine Werbung, keine Analyse- oder Tracking-Werkzeuge und kein Benutzerkonto. Wenn Sie die App löschen, werden auch alle darin gespeicherten Daten von Ihrem Gerät entfernt.</p>
+      <p>Sofern Sie in Ihren Geräteeinstellungen die iCloud- oder Geräte-Datensicherung von Apple aktiviert haben, können die App-Daten Bestandteil dieser Sicherung sein. Diese Sicherung erfolgt durch Apple und unterliegt den Datenschutzbestimmungen von Apple.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">4</span>Face ID / Touch ID</h2>
+      <p>Sie können die App optional mit Face ID oder Touch ID absichern. Die Prüfung erfolgt ausschließlich durch das Betriebssystem Ihres Geräts. Die App erhält keinen Zugriff auf Ihre biometrischen Daten, sondern lediglich die Information, ob die Entsperrung erfolgreich war.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">5</span>Spenden (In-App-Käufe)</h2>
+      <p>Die App bietet die Möglichkeit, die Entwicklung freiwillig mit einer Spende zu unterstützen. Die Abwicklung erfolgt ausschließlich über das In-App-Kauf-System von Apple. Zahlungsdaten werden allein von Apple verarbeitet; wir erhalten keine personenbezogenen Daten über Sie, sondern lediglich anonymisierte Umsatzinformationen von Apple.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">6</span>Kontaktaufnahme</h2>
+      <p>Im Rahmen der Kontaktaufnahme mit uns (z.B. per E-Mail) werden personenbezogene Daten erhoben. Diese Daten werden ausschließlich zum Zweck der Beantwortung Ihres Anliegens gespeichert und verwendet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Ihre Daten werden nach abschließender Bearbeitung Ihrer Anfrage gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">7</span>Rechte des Betroffenen</h2>
+      <p>Das geltende Datenschutzrecht gewährt Ihnen folgende Betroffenenrechte gegenüber dem Verantwortlichen:</p>
+      <ul>
+        <li>Auskunftsrecht gemäß Art. 15 DSGVO</li>
+        <li>Recht auf Berichtigung gemäß Art. 16 DSGVO</li>
+        <li>Recht auf Löschung gemäß Art. 17 DSGVO</li>
+        <li>Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO</li>
+        <li>Recht auf Unterrichtung gemäß Art. 19 DSGVO</li>
+        <li>Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO</li>
+        <li>Recht auf Widerruf erteilter Einwilligungen gemäß Art. 7 Abs. 3 DSGVO</li>
+        <li>Recht auf Beschwerde bei einer Aufsichtsbehörde gemäß Art. 77 DSGVO</li>
+      </ul>
+      <h3>Widerspruchsrecht</h3>
+      <p class="note">Wenn wir im Rahmen einer Interessenabwägung Ihre personenbezogenen Daten aufgrund unseres überwiegenden berechtigten Interesses verarbeiten, haben Sie das jederzeitige Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen diese Verarbeitung Widerspruch mit Wirkung für die Zukunft einzulegen. Machen Sie von Ihrem Widerspruchsrecht Gebrauch, beenden wir die Verarbeitung der betroffenen Daten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Grundrechte und Grundfreiheiten überwiegen.</p>
+    </section>
+
+    <section>
+      <h2><span class="num">8</span>Dauer der Speicherung personenbezogener Daten</h2>
+      <p>Die Dauer der Speicherung von personenbezogenen Daten bemisst sich anhand der jeweiligen Rechtsgrundlage, am Verarbeitungszweck und – sofern einschlägig – anhand der jeweiligen gesetzlichen Aufbewahrungsfrist. Personenbezogene Daten werden gelöscht, sobald sie für die Zwecke, für die sie erhoben wurden, nicht mehr notwendig sind.</p>
+    </section>
+  </div>
+
+  <footer>© 2026 FinanzKlar</footer>
+</div>
 </body>
 </html>
